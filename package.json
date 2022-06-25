@@ -1,0 +1,26 @@
+{
+  "name": "node-xp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okNeeraj/nodexp.git"
+  },
+  "author": "Neeraj Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okNeeraj/nodexp/issues"
+  },
+  "homepage": "https://github.com/okNeeraj/nodexp#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "sunshine-conversations-client": "^9.7.1"
+  }
+}
