@@ -4,8 +4,7 @@ const authMiddleware = require("../../middlewares/auth.Middleware")
 const userController = require("../../controllers/user.Controller")
 
 router
-    .use(authMiddleware)
-    .get("/", userController)
+    .get("/", authMiddleware, userController)
     .post("/new", (req, res) => {
         res.send("Create a new user");
     })
