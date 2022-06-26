@@ -5,19 +5,20 @@ const userController = require("../../controllers/user.Controller")
 
 router
     .get("/", authMiddleware, userController)
+    .get("/new", authMiddleware, userController)
     .post("/new", (req, res) => {
         res.send("Create a new user");
     })
 
     .route("/:userId")
     .get((req, res) => {
-        res.send(`Get user with id ${req.params.userId}`);
+        res.send(`Get user with id ${req.params.userId}`)
     })
     .put((req, res) => {
-        res.send(`Update user with id ${req.params.userId}`);
+        res.send(`Update user with id ${req.params.userId}`)
     })
     .delete((req, res) => {
-        res.send(`Deleted user with id ${req.params.userId}`);
+        res.send(`Deleted user with id ${req.params.userId}`)
     });
 
-module.exports = router;
+module.exports = router

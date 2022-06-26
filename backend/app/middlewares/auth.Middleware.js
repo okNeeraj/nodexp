@@ -3,9 +3,9 @@ module.exports = authMiddleware = (req, res, next) => {
     const authenticate = new Promise((resolve, reject) => {
         let isAuthenticate = true
         if (isAuthenticate == true) {
-            resolve('Authentication Success.');
+            resolve('Authentication Success.')
         } else {
-            reject('Authentication failed!');
+            reject('Authentication failed!')
         }
     })
 
