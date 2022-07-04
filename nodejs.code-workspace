@@ -4,8 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "../buymesamosa"
+			"path": "../nodexp"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nodexp"
+	},
+	"mongosnippets": {
+		"sourceDir": "src"
+	}
 }
