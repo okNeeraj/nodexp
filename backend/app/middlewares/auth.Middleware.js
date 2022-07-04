@@ -1,9 +1,9 @@
-module.exports = authMiddleware = (req, res, next) => {
+module.exports = authMiddleware = async (req, res, next) => {
     console.log("Start :: authMiddleware");
     const authenticate = new Promise((resolve, reject) => {
         let isAuthenticate = true
         if (isAuthenticate == true) {
-            resolve('Authentication Success.')
+            resolve('==> Authentication Success.')
         } else {
             reject('Authentication failed!')
         }
